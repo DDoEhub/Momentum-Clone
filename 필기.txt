@@ -1,3 +1,9 @@
+git 연결과정
+1. 터미널을 연다
+2. 마우스 오른쪽 - Git Bash Here
+3. 깃 계정정보 등록
+3. git init: git 파일생성
+
 commit을 하기 위한 과정
 1. 터미널을 연다
 2. git add . (확인- git status)
@@ -71,7 +77,7 @@ ex)	window.addEventLittener("resize",)
 
 //이벤트리스너에서 실행되는 함수는 개발자인 우리가 실행 하는게 아니라 미리 설정만 해놓고 이벤트가 발생했을 때 브라우저가 실행시켜준다. 이때 event로 대표되는 첫번째 argument에 다양한 정보를 담은 채로 제공되는데 이게 매우 중요한 부분이라 말하는데 아직 이유를 잘 몰라서 이후 자세한 정보가 생긴다면 추가바람 -by.2220212
 
-input 같은 태그에는 자동으로 submit등의 default매서드가 실행되는데 이런 것 들을 막아줄 수 있는 매서드가 .preventDefault() 다. 보통 이벤트에 자주 사용되는 태그이기에 인수가 event인 함수에 event.preventDefault()로 적용시킬 수 있다.
+input 같은 태그에는 자동으로 submit등의 default메서드가 실행되는데 이런 것 들을 막아줄 수 있는 메서드가 .preventDefault() 다. 보통 이벤트에 자주 사용되는 태그이기에 인수가 event인 함수에 event.preventDefault()로 적용시킬 수 있다.
 
 관행 #2: string으로만 구성된 변수를 작성할 때는 변수이름을 전부 대문자로 표시한다.
 
@@ -91,3 +97,23 @@ localStorage.getItem("데이터종류");
 삭제할 때는
 localStorage.removeItem("데이터종류");
 형식으로 코드를 작성할 수 있다.
+
+setInterval(함수,카운터)를 사용하면 매 (카운터) 만큼의 시간이 지날 때 마다 (함수)를 실행시켜줄 수 있다.
+
+setTimeout(함수,카운터)를 사용하면 (카운터) 만큼의 시간이 지나면 (함수)를 실행시킨다.
+
+String(데이터)는 (데이터)의 값을 문자열로 변환해준다.
+.padStart(글자수, "보정값")
+.padEnd(글자수, "보정값")
+문자열의 글자수를 맞춰주는 함수로 (글자수)보다 부족한 만큼을 Start는 앞에서부터 End는 뒤에서 부터 (보정값)을 채워 넣는다.
+
+Date객체는 new연산자와 함께 사용
+//new연산자와 생성자 개념은 후에 더 공부하기로
+
+Mate 객체는 상수와 함수를 위한 속성과 메서드를 지닌 내장 객체다. 다른 전역 객체와 달리 생성자는 아니다.
+math의 메서드인 random은 0과 1사이의 난수를 반환한다.
+추가로 round(값), ceil(값), floor(값)는 각각 (값)의 반올림, 올림, 내림값을 반환한다.
+
+classList는 개별 class를 지정해 줄 수 있고 className는 모든 class를 지정한다.
+
+document.createElement("태그")은 (태그)를 생성해준다. 하지만 위치를 지정하지 않았기 때문에 document.("위치").appendChild("태그")를 통해 (태그)를 (위치)태그 제일 뒤에 넣거나 document.("위치").prependChild("태그")를 통해 제일 앞에 넣을 수 있다.
