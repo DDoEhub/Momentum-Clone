@@ -8,13 +8,18 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="weather">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <form id="login-form" class="hidden">
         <input
         required
-        minlength="4"
-        maxlength="15"
         type="text"
         placeholder="What is your name?"
+        onfocus= "this.placeholder = ''"
+        onblur= "this.placeholder = 'What is your name?'"
         />
         <button>Log in</button>
     </form>
@@ -26,8 +31,10 @@
         <h2>00:00:00</h2>
     </form>
     <form id="todo-form">
-        <input type="text" placeholder="write to do list">
-        <!--<button>add</button>-->
+        <input
+        type="text"
+        placeholder="write to do list"
+        maxlength="30">
     </form>
     <ol id="todo-list"></ol>
     <div id="quote">
@@ -40,5 +47,6 @@
     <script src="js/quotes.js"></script>
     <script src="js/background..js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>

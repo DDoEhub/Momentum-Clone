@@ -33,6 +33,10 @@ function paintList(newTodo) {
 }
 
 function inputTodoList(event) {
+    if(todoInput.value.length === 0){
+        event.preventDefault();
+        todoInput.placeholder = "write something to do";
+    }else{
     event.preventDefault();
 
     const newTodo = todoInput.value;
@@ -46,6 +50,7 @@ function inputTodoList(event) {
     saveToDos();
 
     todoInput.value = "";
+    }
 }
 
 
