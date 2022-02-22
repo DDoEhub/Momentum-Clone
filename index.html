@@ -34,7 +34,9 @@
         <input
         type="text"
         placeholder="write to do list"
-        maxlength="30">
+        maxlength="25"
+        onfocus="this.placeholder =''"
+        onblur="this.placeholder ='write to do list & press Enter'">
     </form>
     <ol id="todo-list"></ol>
     <div id="quote">

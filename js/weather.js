@@ -11,9 +11,9 @@ function onGeoSuccess(position) {
         const temperature = document.querySelector("#weather span:nth-child(2)");
         const weather = document.querySelector("#weather span:last-child");
 
-        location.innerText = `지역: ${data.name}`;
+        location.innerText = `${data.name}`;
         temperature.innerText = `${data.main.temp}°C`;
-        weather.innerText = `날씨: ${data.weather[0].main}`;
+        weather.innerText = `${data.weather[0].main}`;
 
     });
 }
